@@ -1,0 +1,30 @@
+.card {
+  background-color: #eeecec;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+
+.titulo-projeto {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.conteudo-card {
+  padding: 10px;
+  height: 90%;
+}
+.conteudo-card > p {
+  font-size: 0.8rem;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.paragrafo > a {
+  font-size: 0.7rem;
+  color: blue;
+}
+/* cards educação */

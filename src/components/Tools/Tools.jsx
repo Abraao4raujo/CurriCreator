@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../GlobalContext";
 import BlocoDeFerramenta from "./BlocoDeFerramentas";
+import "./Tools.css";
 
 const Tools = () => {
   const dados = useContext(UserContext);

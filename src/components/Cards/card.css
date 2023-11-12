@@ -24,7 +24,7 @@
 }
 
 .paragrafo > a {
-  font-size: 0.7rem;
-  color: blue;
+  text-decoration: none;
+  font-style: italic;
+  color: #000;
 }
-/* cards educação */

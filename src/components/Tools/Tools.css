@@ -1,0 +1,13 @@
+.input_changes label {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input_changes input {
+  margin: 15px;
+  padding: 5px;
+}
+
+.input_changes {
+  margin: 15px;
+}

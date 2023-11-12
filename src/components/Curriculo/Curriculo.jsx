@@ -6,7 +6,7 @@ import { UserContext } from "../../GlobalContext";
 import LinkRede from "../LinkRede";
 import { jsPDF } from "jspdf";
 
-const Curriculo = (props) => {
+const Curriculo = () => {
   const dados = useContext(UserContext);
 
   function generatePDF() {
@@ -20,23 +20,52 @@ const Curriculo = (props) => {
     });
   }
 
+  function percorrerElementos(nomeElemento) {
+    const teste = document.querySelectorAll(".input_changes");
+    console.log(nomeElemento.target.id);
+    console.log(teste[6].firstChild.innerText.toLowerCase());
+
+    for (let i = 0; i < teste.length; i++) {
+      teste[i].style.display = "none";
+      if (
+        teste[i].firstChild.innerText.toLowerCase() == nomeElemento.target.id
+      ) {
+        teste[i].style.display = "block";
+      }
+    }
+  }
+
   return (
     <>
       <div className="container-sheet">
-        <h2 className="tituloNome">{dados.nome || "Seu nome aqui"}</h2>
+        <h2 className="tituloNome" id="nome" onClick={percorrerElementos}>
+          {dados.nome || "Seu nome aqui"}
+        </h2>
         <div className="sheet">
           <div className="grid-column1">
             <div className="container-sobre">
-              <h3 className="titulos">{dados.area || "Sua area aqui"}</h3>
+              <h3 className="titulos" id="area" onClick={percorrerElementos}>
+                {dados.area || "Sua area aqui"}
+              </h3>
               <div className="inf-sobre">
-                <p className="paragrafo">
+                <p
+                  className="paragrafo"
+                  id="about"
+                  onClick={percorrerElementos}
+                >
                   {dados.about ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. loremamet consectetur adipisicing elit. lorem"}
                 </p>
               </div>
             </div>
             <div className="container-experiencia">
-              <h3 className="titulos">Experiencia</h3>
+              <h3
+                className="titulos"
+                id="experiencias"
+                onClick={percorrerElementos}
+              >
+                Experiencia
+              </h3>
               <div className="inf-experiencia">
                 <CardExperience
                   nomeProjeto={
@@ -46,8 +75,10 @@ const Curriculo = (props) => {
                     dados.primeiraExperienciaDesc ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. loremamet consectetur adipisicing elit. lorem"
                   }
-                  tecnologiasUsadas="tecUsadas"
+                  // id={"experiencia1"}
+                  idDesc={"descricaoexperiencia1"}
                 />
+
                 <CardExperience
                   nomeProjeto={
                     dados.segundaExperienciaTitulo || "Sua experiencia aqui"
@@ -56,8 +87,10 @@ const Curriculo = (props) => {
                     dados.segundaExperienciaDesc ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. loremamet consectetur adipisicing elit. lorem"
                   }
-                  tecnologiasUsadas="tecUsadas"
+                  // id={"experiencia2"}
+                  idDesc={"descricaoexperiencia2"}
                 />
+
                 <CardExperience
                   nomeProjeto={
                     dados.terceiraExperienciaTitulo || "Sua experiencia aqui"
@@ -66,24 +99,21 @@ const Curriculo = (props) => {
                     dados.terceiraExperienciaDesc ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. loremamet consectetur adipisicing elit. lorem"
                   }
-                  tecnologiasUsadas="tecUsadas"
-                />
-                <CardExperience
-                  nomeProjeto={
-                    dados.terceiraExperienciaTitulo || "Sua experiencia aqui"
-                  }
-                  desc={
-                    dados.terceiraExperienciaDesc ||
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. loremamet consectetur adipisicing elit. lorem"
-                  }
-                  tecnologiasUsadas="tecUsadas"
+                  // id={"experiencia3"}
+                  idDesc={"descricaoexperiencia3"}
                 />
               </div>
             </div>
           </div>
           <div className="grid-column2">
             <div className="container-contato">
-              <h3 className="titulos">Contato</h3>
+              <h3
+                className="titulos"
+                id="contatos"
+                onClick={percorrerElementos}
+              >
+                Contato
+              </h3>
               <div className="inf-contato">
                 <LinkRede
                   redeSocial="Portfolio"
@@ -104,10 +134,16 @@ const Curriculo = (props) => {
               </div>
             </div>
             <div className="container-tecnologias">
-              <h3 className="titulos">Tecnologias</h3>
+              <h3
+                className="titulos"
+                id="tecnologias"
+                onClick={percorrerElementos}
+              >
+                Tecnologias
+              </h3>
               <div className="inf-tecnologia">
                 {dados.tecnologia ? (
-                  <p>{dados.tecnologia}</p>
+                  <p className="paragrafo">{dados.tecnologia}</p>
                 ) : (
                   <p className="paragrafo">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -117,7 +153,13 @@ const Curriculo = (props) => {
               </div>
             </div>
             <div className="container-educacao">
-              <h3 className="titulos">Educação</h3>
+              <h3
+                className="titulos"
+                id="educacao"
+                onClick={percorrerElementos}
+              >
+                Educação
+              </h3>
               <div className="inf-educacao">
                 <CardEducacao
                   nomeCurso={

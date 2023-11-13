@@ -9,7 +9,7 @@ const Header = () => {
           <li className="list-menu">
             <h1 className="logo-menu">CurriCreator</h1>
           </li>
-          <li className="list-menu">
+          {/* <li className="list-menu">
             <a href="#">Templates</a>
           </li>
           <li className="list-menu">
@@ -20,7 +20,7 @@ const Header = () => {
           </li>
           <li className="list-menu">
             <a href="">Criar Conta</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

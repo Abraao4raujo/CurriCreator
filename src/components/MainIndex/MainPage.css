@@ -1,0 +1,44 @@
+.main_page {
+  background: linear-gradient(0.25turn, #002841, #027aaa);
+  height: calc(100vh - 79px);
+  display: flex;
+}
+
+.container_first_column {
+  color: #fff;
+  padding-top: 95px;
+  padding-left: 70px;
+  width: 50%;
+}
+
+.container_first_column > h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.container_first_column > h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.btn_CriarCurriculo > a {
+  background-color: #03658c;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container_second_column {
+  margin-top: 100px;
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}

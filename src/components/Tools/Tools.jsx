@@ -14,7 +14,7 @@ const Tools = () => {
       <BlocoDeFerramenta
         nameDiv="Experiencias"
         setDados={dados.setPrimeiraExperienciaTitulo}
-      />{" "}
+      />
       <BlocoDeFerramenta
         nameDiv="Experiencias"
         setDados={dados.setPrimeiraExperienciaDesc}
@@ -22,7 +22,7 @@ const Tools = () => {
       <BlocoDeFerramenta
         nameDiv="Experiencias"
         setDados={dados.setSegundaExperienciaTitulo}
-      />{" "}
+      />
       <BlocoDeFerramenta
         nameDiv="Experiencias"
         setDados={dados.setSegundaExperienciaDesc}

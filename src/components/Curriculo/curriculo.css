@@ -1,14 +1,25 @@
+body {
+  background-color: #03658c;
+}
+
+.sheetAndButton {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
 .container-sheet {
+  font-family: "Arial", sans-serif;
   padding: 30px;
+  border-radius: 10px;
   max-width: 793px;
-  max-height: 980px;
-  background-color: #d9d9d9;
+  max-height: 800px;
+  background-color: #fff;
 }
 
 .sheet {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
   width: 540px;
   height: 750px;
 }

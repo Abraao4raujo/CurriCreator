@@ -1,24 +1,48 @@
-.container-menu {
-  padding: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&family=Outfit&family=Poppins&family=Roboto&family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.ul-menu-list {
+.logo_curricreator {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.container_menu ul,
+.items-menu-start {
   display: flex;
+  justify-content: space-around;
+  text-align: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 25px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
 }
 
-.list-menu {
+.container_menu {
+  padding: 15px;
+  background-color: #f3f3f3;
+}
+
+.btn_cadastro {
+  background-color: #04588c;
+  padding: 15px;
+  border-radius: 67px;
+}
+
+.btn_cadastro > a {
+  color: #ffff;
+}
+
+ul li {
   list-style: none;
 }
 
-.logo-menu {
-  font-family: "Montserrat", sans-serif;
-}
-
-.list-menu a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+a {
+  list-style: none;
   text-decoration: none;
   color: #000;
 }

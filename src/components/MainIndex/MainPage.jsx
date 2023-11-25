@@ -12,7 +12,7 @@ const MainPage = () => {
         </h2>
 
         <div className="btn_CriarCurriculo">
-          <Link to="/curriculo">Criar meu curriculo</Link>
+          <Link to="/template/curriculo">Criar meu curriculo</Link>
         </div>
       </div>
       <div className="container_second_column">

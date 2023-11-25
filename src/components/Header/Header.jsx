@@ -11,7 +11,7 @@ const Header = () => {
             <Link to="/">CURRICREATOR</Link>
           </li>
           <li>
-            <a href="#">Templates</a>
+            <a href="/templates">Templates</a>
           </li>
           <li>
             <a href="#">Sobre</a>

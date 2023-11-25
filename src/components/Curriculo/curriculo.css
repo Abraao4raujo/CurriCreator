@@ -31,12 +31,11 @@ body {
 }
 
 .tituloNome {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .titulos {
-  font-size: 1.1rem;
-  margin-top: 20px;
+  font-size: 1rem;
 }
 
 .paragrafo {
@@ -50,20 +49,24 @@ body {
 
 .inf-tecnologia,
 .inf-contato {
-  background-color: #c2c2c2;
-  padding: 10px;
-  margin-top: 1rem;
+  /* background-color: #c2c2c2; */
+  /* margin-top: 1rem; */
   max-width: 252px;
+  margin-bottom: 10px;
   word-wrap: break-word;
 }
 
+#area {
+  margin-bottom: 5px;
+}
+
 .inf-sobre {
-  background-color: #eeecec;
-  padding: 10px;
+  /* background-color: #eeecec; */
   height: auto;
   width: 264px;
   word-wrap: break-word;
-  margin-top: 1rem;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .header-card > h4,

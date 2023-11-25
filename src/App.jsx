@@ -6,10 +6,11 @@ import Tools from "./components/Tools/Tools";
 import { GlobalStorage } from "./GlobalContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./components/MainIndex/MainPage";
+import Templates from "./components/Templates/templates";
 
 const router = createBrowserRouter([
   {
-    path: "/curriculo",
+    path: "/template/curriculo",
     element: (
       <>
         <Header />
@@ -28,6 +29,15 @@ const router = createBrowserRouter([
       <>
         <Header />
         <MainPage />
+      </>
+    ),
+  },
+  {
+    path: "/templates",
+    element: (
+      <>
+        <Header />
+        <Templates />
       </>
     ),
   },

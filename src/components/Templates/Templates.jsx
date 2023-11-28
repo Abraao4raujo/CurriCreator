@@ -10,7 +10,8 @@ const Templates = () => {
         <div className="grid-templates">
           <div className="card-template">
             <Link to="/template/curriculo">
-            <img src="../../../img/primeiroTemplate.png" alt="templates" /></Link>
+              <img src="../../../img/primeiroTemplate.png" alt="templates" />
+            </Link>
           </div>
         </div>
       </div>

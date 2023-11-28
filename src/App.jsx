@@ -10,7 +10,7 @@ import Templates from "./components/Templates/Templates";
 
 const router = createBrowserRouter([
   {
-    path: "/template/curriculo",
+    path: "/templates/curriculo",
     element: (
       <>
         <Header />

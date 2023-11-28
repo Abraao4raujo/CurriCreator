@@ -6,7 +6,7 @@ import Tools from "./components/Tools/Tools";
 import { GlobalStorage } from "./GlobalContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./components/MainIndex/MainPage";
-import Templates from "./components/Templates/templates";
+import Templates from "./components/Templates/Templates";
 
 const router = createBrowserRouter([
   {

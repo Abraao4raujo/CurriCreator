@@ -1,6 +1,6 @@
 import React from "react";
 import "./templates.css";
-import { Link } from "react-router-dom";
+import CardTemplate from "../Cards/CardTemplate";
 
 const Templates = () => {
   return (
@@ -8,11 +8,10 @@ const Templates = () => {
       <div className="container-templates">
         <h2>Templates</h2>
         <div className="grid-templates">
-          <div className="card-template">
-            <Link to="/template/curriculo">
-              <img src="../../../img/primeiroTemplate.png" alt="templates" />
-            </Link>
-          </div>
+          <CardTemplate
+            path_curriculo={"/templates/curriculo"}
+            url_img_curriculo="src\components\Templates\img\primeiroTemplate.png"
+          />
         </div>
       </div>
     </div>

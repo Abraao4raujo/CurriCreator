@@ -51,22 +51,23 @@ body {
 .inf-contato {
   /* background-color: #c2c2c2; */
   /* margin-top: 1rem; */
-  max-width: 252px;
   margin-bottom: 10px;
   word-wrap: break-word;
 }
 
 #area {
   margin-bottom: 5px;
+  height: auto;
 }
 
 .inf-sobre {
   /* background-color: #eeecec; */
+  min-width: 252px;
+  max-width: 252px;
   height: auto;
-  width: 264px;
   word-wrap: break-word;
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .header-card > h4,

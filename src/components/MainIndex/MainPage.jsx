@@ -12,13 +12,13 @@ const MainPage = () => {
         </h2>
 
         <div className="btn_CriarCurriculo">
-          <Link to="/template/curriculo">Criar meu curriculo</Link>
+          <Link to="/templates/curriculo">Criar meu curriculo</Link>
         </div>
       </div>
       <div className="container_second_column">
         <svg
-          width="553"
-          height="612"
+          width="503"
+          height="512"
           viewBox="0 0 603 680"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

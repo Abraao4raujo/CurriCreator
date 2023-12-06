@@ -41,13 +41,13 @@ const Curriculo = () => {
 
           <div className="sheet">
             <div className="grid-column1">
-              <Draggable
-                axis="both"
-                handle={`.container-sobre`}
-                grid={[10, 10]}
-                scale={1}
-              >
-                <div className="container-sobre">
+              <div className="container-sobre">
+                <Draggable
+                  axis="both"
+                  handle={`.titulos`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <h3
                     className="titulos"
                     id="area"
@@ -55,6 +55,13 @@ const Curriculo = () => {
                   >
                     {dados.area || "Sua área aqui"}
                   </h3>
+                </Draggable>
+                <Draggable
+                  axis="both"
+                  handle={`.inf-sobre`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <div className="inf-sobre">
                     <p
                       className="paragrafo"
@@ -65,16 +72,16 @@ const Curriculo = () => {
                         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. loremamet consectetur adipisicing elit. lorem"}
                     </p>
                   </div>
-                </div>
-              </Draggable>
+                </Draggable>
+              </div>
 
-              <Draggable
-                axis="both"
-                handle={`.container-experiencia`}
-                grid={[10, 10]}
-                scale={1}
-              >
-                <div className="container-experiencia">
+              <div className="container-experiencia">
+                <Draggable
+                  axis="both"
+                  handle={`.titulos`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <h3
                     className="titulos"
                     id="experiencias"
@@ -82,6 +89,13 @@ const Curriculo = () => {
                   >
                     Experiencia
                   </h3>
+                </Draggable>
+                <Draggable
+                  axis="both"
+                  handle=".inf-experiencia"
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <div className="inf-experiencia">
                     <CardExperience
                       nomeProjeto={
@@ -118,17 +132,17 @@ const Curriculo = () => {
                       idDesc={"descricaoexperiencia3"}
                     />
                   </div>
-                </div>
-              </Draggable>
+                </Draggable>
+              </div>
             </div>
             <div className="grid-column2">
-              <Draggable
-                axis="both"
-                handle={`.container-contato`}
-                grid={[10, 10]}
-                scale={1}
-              >
-                <div className="container-contato">
+              <div className="container-contato">
+                <Draggable
+                  axis="both"
+                  handle={`.titulos`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <h3
                     className="titulos"
                     id="contatos"
@@ -136,6 +150,13 @@ const Curriculo = () => {
                   >
                     Contato
                   </h3>
+                </Draggable>
+                <Draggable
+                  axis="both"
+                  handle={`.inf-contato`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <div className="inf-contato">
                     <LinkRede
                       redeSocial="Portfolio"
@@ -154,16 +175,16 @@ const Curriculo = () => {
 
                     <LinkRede redeSocial="Email" link={dados.contato4 || "#"} />
                   </div>
-                </div>
-              </Draggable>
+                </Draggable>
+              </div>
 
-              <Draggable
-                axis="both"
-                handle={`.container-tecnologias`}
-                grid={[10, 10]}
-                scale={1}
-              >
-                <div className="container-tecnologias">
+              <div className="container-tecnologias">
+                <Draggable
+                  axis="both"
+                  handle={`.titulos`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <h3
                     className="titulos"
                     id="tecnologias"
@@ -171,6 +192,13 @@ const Curriculo = () => {
                   >
                     Tecnologias
                   </h3>
+                </Draggable>
+                <Draggable
+                  axis="both"
+                  handle={`.inf-tecnologia`}
+                  grid={[10, 10]}
+                  scale={1}
+                >
                   <div className="inf-tecnologia">
                     {dados.tecnologia ? (
                       <p className="paragrafo">{dados.tecnologia}</p>
@@ -181,8 +209,8 @@ const Curriculo = () => {
                       </p>
                     )}
                   </div>
-                </div>
-              </Draggable>
+                </Draggable>
+              </div>
 
               <Draggable
                 axis="both"

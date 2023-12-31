@@ -1,53 +1,47 @@
 import React from "react";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { GlobalStorage } from "./GlobalContext";
+
 import "./index.css";
 import Header from "../src/components/Header/Header";
 import Curriculo from "./components/Curriculo/Curriculo";
 import Tools from "./components/Tools/Tools";
-import { GlobalStorage } from "./GlobalContext";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./components/MainIndex/MainPage";
 import Templates from "./components/Templates/Templates";
 
-const router = createBrowserRouter([
-  {
-    path: "/templates/curriculo",
-    element: (
-      <>
-        <Header />
-        <div className="pagina-curriculo">
-          <GlobalStorage>
-            <Tools />
-            <Curriculo />
-          </GlobalStorage>
-        </div>
-      </>
-    ),
-  },
-  {
-    path: "/",
-    element: (
-      <>
-        <Header />
-        <MainPage />
-      </>
-    ),
-  },
-  {
-    path: "/templates",
-    element: (
-      <>
-        <Header />
-        <Templates />
-      </>
-    ),
-  },
-]);
+function Template() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
+}
 
 const App = () => {
   return (
     <div>
       <React.StrictMode>
-        <RouterProvider router={router} />
+        <BrowserRouter>
+          <Routes>
+            <Route element={<Template />}>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/templates" element={<Templates />} />
+              <Route
+                path="/templates/curriculo"
+                element={
+                  <div className="pagina-curriculo">
+                    <GlobalStorage>
+                      <Tools />
+                      <Curriculo />
+                    </GlobalStorage>
+                  </div>
+                }
+              />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+        {/* <RouterProvider router={router} /> */}
       </React.StrictMode>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import "./templates.css";
+import "./Templates.css";
 import CardTemplate from "../Cards/CardTemplate";
 
 const Templates = () => {

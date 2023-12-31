@@ -262,7 +262,12 @@ const Curriculo = () => {
             </div>
           </div>
         </div>
-        <button className="btnGerarPdf" onClick={generatePDF}>
+        <button
+          className="btnGerarPdf"
+          onClick={() => {
+            generatePDF();
+          }}
+        >
           gerar PDF
         </button>
       </div>

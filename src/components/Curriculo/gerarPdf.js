@@ -1,9 +1,8 @@
 import { jsPDF } from "jspdf";
 
 function generatePDF() {
-  const doc = new jsPDF({ unit: "pt", format: "a4" });
   const pdfElement = document.querySelector(".container-sheet");
-
+  const doc = new jsPDF({ unit: "pt", format: "a4" });
   doc.html(pdfElement, {
     callback: (pdf) => {
       pdf.save("MeuCurriCreator.pdf");
